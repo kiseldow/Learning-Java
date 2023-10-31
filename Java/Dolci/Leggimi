@@ -1,42 +1,52 @@
 
-__________.__          __                              __          
-\______   \__| _______/  |_  ________________    _____/  |_  ____  
- |       _/  |/  ___/\   __\/  _ \_  __ \__  \  /    \   __\/ __ \ 
- |    |   \  |\___ \  |  | (  <_> )  | \// __ \|   |  \  | \  ___/ 
- |____|_  /__/____  > |__|  \____/|__|  (____  /___|  /__|  \___  >
-        \/        \/                         \/     \/          \/ 
+  _________                      __   _________.__                   
+ /   _____/_  _  __ ____   _____/  |_/   _____/|  |__   ____ ______  
+ \_____  \\ \/ \/ // __ \_/ __ \   __\_____  \ |  |  \ /  _ \\____ \ 
+ /        \\     /\  ___/\  ___/|  | /        \|   Y  (  <_> )  |_> >
+/_______  / \/\_/  \___  >\___  >__|/_______  /|___|  /\____/|   __/ 
+        \/             \/     \/            \/      \/       |__|    
 
 
 -- INTRODUZIONE --
-Il progetto di Gestione Prenotazioni Ristorante è un'applicazione Java che ho sviluppato per gestire le prenotazioni dei clienti in un ristorante. 
-L'obiettivo di questo progetto è automatizzare il processo di accettazione delle prenotazioni, consentendo ai clienti di prenotare un tavolo per un determinato numero di persone, 
-visualizzare i tavoli disponibili e, se necessario, annullare una prenotazione. 
-Questo sistema è stato progettato per essere flessibile e adattabile alle esigenze specifiche del ristorante.
+Il Progetto Dolci è un'applicazione Java sviluppata per la gestione di un'immaginaria pasticceria. Questa applicazione consente agli utenti di visualizzare, aggiungere, rimuovere e acquistare prodotti dolci, 
+nonché di gestire il personale, fornitori e materie prime. L'obiettivo principale del progetto è semplificare il processo di gestione dei prodotti dolci e delle risorse umane all'interno della pasticceria.
 
 -- ARCHITETTURA --
-Il progetto è composto da diverse classi principali:
+Il progetto è composto principalmente dalle seguenti classi e componenti:
 
-Prenotazione: Questa classe rappresenta una prenotazione e contiene dettagli quali l'ID della prenotazione, la disponibilità dei giorni e degli orari, il numero di persone e il tavolo associato.
+Prodotto: Rappresenta un prodotto dolce disponibile nella pasticceria. Ogni prodotto ha un nome, un prezzo, ingredienti, una descrizione, una quantità disponibile e una quantità nel carrello. 
+Questa classe è la base per i tipi di prodotti come Torta, Cupcake e Biscotto.
 
-Tavolo: Questa classe rappresenta un tavolo del ristorante e include informazioni come l'ID del tavolo, il numero di posti e lo stato del tavolo (occupato o libero).
+Torta, Cupcake, Biscotto: Classi che estendono la classe Prodotto per rappresentare specifici tipi di dolci. Contengono attributi aggiuntivi come diametro (per i biscotti) o gusto (per i cupcake).
 
-PrenotazioneServiceImpl: Questa classe implementa l'interfaccia PrenotazioneService ed è responsabile della gestione delle prenotazioni e dei tavoli. 
-Fornisce metodi per prenotare tavoli, annullare prenotazioni e verificare la disponibilità dei tavoli.
+Ingrediente: Rappresenta una materia prima utilizzata per la preparazione dei dolci. Gli ingredienti hanno un nome e una quantità disponibile.
 
-Interfaccia: Questa classe rappresenta un'interfaccia utente a riga di comando che consente agli utenti di interagire con il sistema. 
-Gli utenti possono eseguire azioni come prenotare tavoli, annullare prenotazioni esistenti e visualizzare tavoli disponibili attraverso un menu interattivo.
+Amministrazione: Gestisce i prodotti dolci disponibili nel catalogo e il personale della pasticceria. Fornisce metodi per aggiungere, rimuovere prodotti e assumere dipendenti.
 
--- CARATTERISTICHE CHIAVE --
-Ecco alcune delle caratteristiche chiave del progetto:
+Cliente: Rappresenta un cliente che può aggiungere prodotti al carrello, effettuare ordini e gestire il proprio denaro.
 
-Prenotazione e Annullamento: I clienti possono prenotare tavoli specifici per un numero specifico di persone e annullare le prenotazioni in caso di necessità.
+Dipendente, Manager, Pasticciere: Classi per la gestione del personale. I dipendenti hanno nome, cognome, ruolo, data di nascita e data di assunzione. I manager possono assumere e licenziare dipendenti. 
+I pasticceri possono creare prodotti dolci in base alla disponibilità degli ingredienti.
 
-Verifica della Disponibilità dei Tavoli: Il sistema è in grado di verificare la disponibilità dei tavoli in base al numero di persone e di restituire una lista di tavoli disponibili.
+Fornitore: Rappresenta un fornitore che rifornisce le materie prime necessarie per la preparazione dei dolci. Agisce solo su richiesta del proprietario della pasticceria.
 
-Archiviazione dei Dati: I dati sulle prenotazioni e sui tavoli sono gestiti e archiviati in memoria all'interno delle rispettive classi.
+-- FUNZIONALITA` PRINCIPALI --
+Di seguito sono elencate alcune delle funzionalità principali del progetto Dolci:
 
-Interfaccia Utente Intuitiva: L'interfaccia utente a riga di comando fornisce un'esperienza intuitiva per i clienti e gli operatori del ristorante.
+Gestione dei Prodotti: Gli utenti possono visualizzare, aggiungere e rimuovere prodotti dolci dal catalogo della pasticceria. I prodotti possono essere di diversi tipi, come torte, cupcake e biscotti.
+
+Gestione del Carrello: I clienti possono aggiungere prodotti al proprio carrello virtuale e successivamente effettuare un ordine.
+
+Gestione delle Prenotazioni: I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingredienti e rispettando determinate regole (ad esempio, creare biscotti dopo un certo numero di torte).
+
+Gestione del Personale: Il manager può assumere e licenziare dipendenti, e tutti i dipendenti possono svolgere le proprie attività specifiche.
+
+Rifornimento delle Materie Prime: Il fornitore può rifornire le materie prime necessarie per la preparazione dei dolci su richiesta del proprietario della pasticceria.
 
 -- UTILIZZO --
-Gli utenti possono avviare l'applicazione e interagire con il sistema attraverso l'interfaccia utente a riga di comando. Le opzioni principali includono la prenotazione di tavoli, 
-l'annullamento di prenotazioni e la verifica dei tavoli disponibili. L'applicazione è stata progettata per essere semplice da usare e adattabile alle esigenze specifiche del ristorante.
+Gli utenti possono avviare l'applicazione Dolci e interagire con il sistema attraverso una serie di comandi e azioni disponibili nelle diverse classi e componenti. Ad esempio:
+
+I clienti possono aggiungere prodotti al proprio carrello, effettuare ordini e gestire il proprio denaro.
+I manager possono assumere e licenziare dipendenti, modificare la quantità di prodotti e visualizzare informazioni dettagliate sul personale.
+I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingredienti.
+Il fornitore può rifornire le materie prime su richiesta del proprietario.
