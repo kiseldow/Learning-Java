@@ -1,3 +1,12 @@
+
+__________.__          __                              __          
+\______   \__| _______/  |_  ________________    _____/  |_  ____  
+ |       _/  |/  ___/\   __\/  _ \_  __ \__  \  /    \   __\/ __ \ 
+ |    |   \  |\___ \  |  | (  <_> )  | \// __ \|   |  \  | \  ___/ 
+ |____|_  /__/____  > |__|  \____/|__|  (____  /___|  /__|  \___  >
+        \/        \/                         \/     \/          \/ 
+
+
 -- INTRODUZIONE --
 Il progetto di Gestione Prenotazioni Ristorante è un'applicazione Java che ho sviluppato per gestire le prenotazioni dei clienti in un ristorante. 
 L'obiettivo di questo progetto è automatizzare il processo di accettazione delle prenotazioni, consentendo ai clienti di prenotare un tavolo per un determinato numero di persone, 
