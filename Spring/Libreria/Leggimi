@@ -1,0 +1,35 @@
+
+.____    ._____.                               
+|    |   |__\_ |_________   ___________ ___.__.
+|    |   |  || __ \_  __ \_/ __ \_  __ <   |  |
+|    |___|  || \_\ \  | \/\  ___/|  | \/\___  |
+|_______ \__||___  /__|    \___  >__|   / ____|
+        \/       \/            \/       \/     
+
+
+-- INTRODUZINE --
+Introduzione
+Questo progetto è una simulazione di una libreria, implementata utilizzando tecnologie Spring come Spring Boot, Spring MVC e Spring Data, 
+insieme ad Hibernate come ORM (Object-Relational Mapping) e MySQL come database. L'obiettivo principale del progetto è consentire agli utenti di inserire, 
+modificare ed eliminare libri e autori all'interno del sistema. Inoltre, verrà gestita una relazione many-to-many tra libri e autori, 
+dove ogni libro può avere uno o più autori e ogni autore può aver scritto uno o più libri.
+
+-- STRUTTURA DEL PROGETTO --
+Il progetto è diviso in diverse parti:
+
+Entità: Sono state definite due entità principali, Libro e Autore. Queste entità rappresentano i dati fondamentali che il sistema deve gestire. 
+La relazione many-to-many tra queste due entità è stata gestita tramite annotazioni Hibernate.
+
+Controller: Sono stati creati controller, come LibroController e AutoreController, che forniscono le API per gestire le operazioni CRUD
+sui libri e sugli autori. Questi controller consentono agli utenti di aggiungere, modificare ed eliminare dati dal sistema.
+
+Repository: Sono stati implementati i repository per Libro e Autore utilizzando Spring Data JPA. 
+Questi repository semplificano l'accesso ai dati nel database e forniscono metodi per interrogare e manipolare i dati in modo efficace.
+
+
+-- UTILIZZO --
+Gli utenti possono accedere all'applicazione tramite le API esposte dai controller. Possono aggiungere nuovi libri e autori, 
+modificare quelli esistenti ed eliminarli secondo necessità. La relazione many-to-many tra libri e autori è gestita automaticamente dal sistema.
+
+Per eseguire il progetto, è necessario assicurarsi di avere configurato correttamente il database MySQL e specificato le informazioni di connessione 
+nel file application.properties. Successivamente, puoi avviare l'applicazione e accedere alle API tramite un client REST o un browser.
