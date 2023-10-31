@@ -6,7 +6,7 @@
 /_______  / \/\_/  \___  >\___  >__|/_______  /|___|  /\____/|   __/ 
         \/             \/     \/            \/      \/       |__|    
 
-INTRODUCTION
+# INTRODUCTION
 
 The Dolci Project is a Java application developed for managing an imaginary pastry shop. This application allows users to view, add, remove, and purchase sweet products, as well as manage personnel, suppliers, and raw materials. The main goal of the project is to simplify the process of managing sweet products and human resources within the pastry shop.
 
