@@ -42,8 +42,7 @@ Gli utenti possono lasciare recensioni sui libri che hanno acquistato, fornendo 
 L'applicazione calcola i libri popolari basati sulle recensioni degli utenti.
 5. Raccomandazioni
 Gli utenti possono ricevere raccomandazioni di libri basate sulle loro preferenze e sulle recensioni.
-Esecuzione dell'Applicazione
-L'applicazione può essere eseguita avviando la classe Test, che avvia il menu interattivo e consente di testare le funzionalità.
+
 
 -- UTILIZZO --
 L'applicazione è interattiva e può essere utilizzata attraverso un menu di selezione utente. Ecco alcune delle funzionalità principali:
