@@ -1,0 +1,53 @@
+
+
+Introduction
+The "Online Library" is a Java application to manage a catalog of books, users, and reviews. It provides functionality to add users, books, and reviews, view the book catalog, calculate popular books, and recommend books to users based on their preferences and reviews.
+
+Classes
+The application primarily consists of the following classes:
+
+Book
+This class represents a book and is characterized by attributes such as id, title, author, genre, and price. Each book is identified by a unique ID. It provides methods to get and set book details, as well as to display book details.
+
+User
+This class represents a user of the online library and is characterized by attributes such as id, name, email, and a list of purchased books (libriAcquistati). It provides methods for purchasing books, viewing user details, and leaving reviews.
+
+Review
+This class represents a review of a book by a user. It contains attributes such as user, book, rating, and comment.
+
+OnlineLibrary
+This class is the heart of the application and is responsible for managing books, users, and reviews. It provides methods to add users, books, and reviews, calculate popular books, recommend books based on user preferences, and display the book catalog.
+
+Test
+This class contains the main method and represents a test of the application. In the test, random books, users, and reviews are created, and the functioning of the application is demonstrated, including calculations of popular books and recommendations.
+
+Key Features
+User Management
+Users can register and be added to the online library.
+
+Book Management
+Books can be added to the catalog with details such as title, author, genre, and price.
+
+Reviews
+Registered users can leave reviews for the books they have purchased, providing a rating and comment.
+
+Popular Books Calculation
+The application calculates popular books based on user reviews.
+
+Recommendations
+Users can receive book recommendations based on their preferences and reviews.
+
+Usage
+The application is interactive and can be used through a user selection menu. Here are some of the main features:
+
+Add User: Allows adding a new user to the online library.
+
+Add Book: Allows adding a new book to the online library's catalog.
+
+Add Review: Allows registered users to leave reviews for books.
+
+Show Books and Users: Displays the complete list of books in the online library and registered users.
+
+Get Recommended Book: Suggests a list of recommended books to the user based on their preferences.
+
+Exit: Allows exiting the application.
