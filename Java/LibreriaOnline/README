@@ -1,4 +1,13 @@
 
+__________               __            
+\______   \ ____   ____ |  | __  ______
+ |    |  _//  _ \ /  _ \|  |/ / /  ___/
+ |    |   (  <_> |  <_> )    <  \___ \ 
+ |______  /\____/ \____/|__|_ \/____  >
+        \/                   \/     \/ 
+
+
+
 
 Introduction
 The "Online Library" is a Java application to manage a catalog of books, users, and reviews. It provides functionality to add users, books, and reviews, view the book catalog, calculate popular books, and recommend books to users based on their preferences and reviews.
