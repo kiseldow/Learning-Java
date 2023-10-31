@@ -5,3 +5,58 @@ __________               __
  |    |   (  <_> |  <_> )    <  \___ \ 
  |______  /\____/ \____/|__|_ \/____  >
         \/                   \/     \/ 
+
+
+-- INTRODUZIONE -- 
+La "Libreria Online" è un'applicazione Java per gestire un catalogo di libri, utenti e recensioni. Fornisce funzionalità per aggiungere utenti, libri e recensioni, visualizzare il catalogo dei libri, 
+calcolare libri popolari e raccomandare libri agli utenti in base alle loro preferenze e alle recensioni.
+
+-- CLASSI --
+L'applicazione è composta principalmente dalle seguenti classi:
+
+1. Libro
+Questa classe rappresenta un libro ed è caratterizzata da attributi come id, titolo, autore, genere e prezzo. Ogni libro è identificato da un ID univoco.
+Fornisce metodi per ottenere e impostare i dettagli del libro, nonché per mostrare i dettagli del libro.
+2. Utente
+Questa classe rappresenta un utente della libreria online ed è caratterizzata da attributi come id, nome, email e una lista di libriAcquistati.
+Fornisce metodi per l'acquisto di libri, visualizzazione dei dettagli utente e la possibilità di lasciare recensioni.
+3. Recensione
+Questa classe rappresenta una recensione di un libro da parte di un utente.
+Contiene attributi come utente, libro, valutazione e commento.
+4. LibreriaOnline
+Questa classe è il cuore dell'applicazione ed è responsabile della gestione di libri, utenti e recensioni.
+Fornisce metodi per aggiungere utenti, libri e recensioni, calcolare libri popolari, raccomandare libri in base alle preferenze dell'utente e visualizzare il catalogo dei libri.
+5. Test
+Questa classe contiene il metodo main e rappresenta un test dell'applicazione.
+Nel test vengono creati libri casuali, utenti e recensioni e viene dimostrato il funzionamento dell'applicazione, inclusi calcoli di libri popolari e raccomandazioni.
+
+
+-- FUNZIONALITA` CHIAVE -- 
+1. Gestione degli Utenti
+Gli utenti possono essere registrati e aggiunti alla libreria online.
+2. Gestione dei Libri
+I libri possono essere aggiunti al catalogo con dettagli come titolo, autore, genere e prezzo.
+3. Recensioni
+Gli utenti possono lasciare recensioni sui libri che hanno acquistato, fornendo una valutazione e un commento.
+4. Calcolo Libri Popolari
+L'applicazione calcola i libri popolari basati sulle recensioni degli utenti.
+5. Raccomandazioni
+Gli utenti possono ricevere raccomandazioni di libri basate sulle loro preferenze e sulle recensioni.
+Esecuzione dell'Applicazione
+L'applicazione può essere eseguita avviando la classe Test, che avvia il menu interattivo e consente di testare le funzionalità.
+
+-- UTILIZZO --
+L'applicazione è interattiva e può essere utilizzata attraverso un menu di selezione utente. Ecco alcune delle funzionalità principali:
+
+Aggiungi Utente: Permette di aggiungere un nuovo utente alla libreria online.
+
+Aggiungi Libro: Permette di aggiungere un nuovo libro al catalogo della libreria online.
+
+Aggiungi Recensione: Permette agli utenti registrati di lasciare recensioni sui libri.
+
+Mostra Libri e Utenti: Visualizza l'elenco completo dei libri presenti nella libreria online e degli utenti registrati.
+
+Fatti Consigliare un Libro: Suggerisce all'utente una lista di libri raccomandati basati sulle proprie preferenze.
+
+Esci: Permette di uscire dall'applicazione.
+
