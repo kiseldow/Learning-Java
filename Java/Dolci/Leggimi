@@ -1,0 +1,52 @@
+
+  _________                      __   _________.__                   
+ /   _____/_  _  __ ____   _____/  |_/   _____/|  |__   ____ ______  
+ \_____  \\ \/ \/ // __ \_/ __ \   __\_____  \ |  |  \ /  _ \\____ \ 
+ /        \\     /\  ___/\  ___/|  | /        \|   Y  (  <_> )  |_> >
+/_______  / \/\_/  \___  >\___  >__|/_______  /|___|  /\____/|   __/ 
+        \/             \/     \/            \/      \/       |__|    
+
+
+-- INTRODUZIONE --
+Il Progetto Dolci è un'applicazione Java sviluppata per la gestione di un'immaginaria pasticceria. Questa applicazione consente agli utenti di visualizzare, aggiungere, rimuovere e acquistare prodotti dolci, 
+nonché di gestire il personale, fornitori e materie prime. L'obiettivo principale del progetto è semplificare il processo di gestione dei prodotti dolci e delle risorse umane all'interno della pasticceria.
+
+-- ARCHITETTURA --
+Il progetto è composto principalmente dalle seguenti classi e componenti:
+
+Prodotto: Rappresenta un prodotto dolce disponibile nella pasticceria. Ogni prodotto ha un nome, un prezzo, ingredienti, una descrizione, una quantità disponibile e una quantità nel carrello. 
+Questa classe è la base per i tipi di prodotti come Torta, Cupcake e Biscotto.
+
+Torta, Cupcake, Biscotto: Classi che estendono la classe Prodotto per rappresentare specifici tipi di dolci. Contengono attributi aggiuntivi come diametro (per i biscotti) o gusto (per i cupcake).
+
+Ingrediente: Rappresenta una materia prima utilizzata per la preparazione dei dolci. Gli ingredienti hanno un nome e una quantità disponibile.
+
+Amministrazione: Gestisce i prodotti dolci disponibili nel catalogo e il personale della pasticceria. Fornisce metodi per aggiungere, rimuovere prodotti e assumere dipendenti.
+
+Cliente: Rappresenta un cliente che può aggiungere prodotti al carrello, effettuare ordini e gestire il proprio denaro.
+
+Dipendente, Manager, Pasticciere: Classi per la gestione del personale. I dipendenti hanno nome, cognome, ruolo, data di nascita e data di assunzione. I manager possono assumere e licenziare dipendenti. 
+I pasticceri possono creare prodotti dolci in base alla disponibilità degli ingredienti.
+
+Fornitore: Rappresenta un fornitore che rifornisce le materie prime necessarie per la preparazione dei dolci. Agisce solo su richiesta del proprietario della pasticceria.
+
+-- FUNZIONALITA` PRINCIPALI --
+Di seguito sono elencate alcune delle funzionalità principali del progetto Dolci:
+
+Gestione dei Prodotti: Gli utenti possono visualizzare, aggiungere e rimuovere prodotti dolci dal catalogo della pasticceria. I prodotti possono essere di diversi tipi, come torte, cupcake e biscotti.
+
+Gestione del Carrello: I clienti possono aggiungere prodotti al proprio carrello virtuale e successivamente effettuare un ordine.
+
+Gestione delle Prenotazioni: I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingredienti e rispettando determinate regole (ad esempio, creare biscotti dopo un certo numero di torte).
+
+Gestione del Personale: Il manager può assumere e licenziare dipendenti, e tutti i dipendenti possono svolgere le proprie attività specifiche.
+
+Rifornimento delle Materie Prime: Il fornitore può rifornire le materie prime necessarie per la preparazione dei dolci su richiesta del proprietario della pasticceria.
+
+-- UTILIZZO --
+Gli utenti possono avviare l'applicazione Dolci e interagire con il sistema attraverso una serie di comandi e azioni disponibili nelle diverse classi e componenti. Ad esempio:
+
+I clienti possono aggiungere prodotti al proprio carrello, effettuare ordini e gestire il proprio denaro.
+I manager possono assumere e licenziare dipendenti, modificare la quantità di prodotti e visualizzare informazioni dettagliate sul personale.
+I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingredienti.
+Il fornitore può rifornire le materie prime su richiesta del proprietario.

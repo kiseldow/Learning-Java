@@ -1,0 +1,52 @@
+
+____   ____.__    .___                                               
+\   \ /   /|__| __| _/____  ____   _________    _____   ____   ______
+ \   Y   / |  |/ __ |/ __ \/  _ \ / ___\__  \  /     \_/ __ \ /  ___/
+  \     /  |  / /_/ \  ___(  <_> ) /_/  > __ \|  Y Y  \  ___/ \___ \ 
+   \___/   |__\____ |\___  >____/\___  (____  /__|_|  /\___  >____  >
+                   \/    \/     /_____/     \/      \/     \/     \/ 
+
+
+-- INTRODUZIONE --
+
+Il progetto Videogiochi è un'applicazione Java creata per gestire una collezione di videogiochi. Consente agli utenti di richiedere e giocare a videogiochi di diversi generi, come azione e strategia. 
+L'applicazione supporta anche un sistema di amministrazione per l'approvazione delle richieste di inserimento di nuovi giochi.
+
+L'obiettivo principale di questo progetto è offrire agli appassionati di videogiochi un modo semplice per richiedere, giocare e amministrare la collezione di videogiochi, 
+consentendo loro di selezionare e giocare a giochi in base al proprio interesse.
+
+-- ARCHITETTURA --
+
+Il progetto Videogiochi è strutturato in diverse classi principali:
+
+Videogioco: Questa è la classe base per tutti i videogiochi. Ogni videogioco ha un nome e un genere. Include anche un metodo gioca, che può essere sovrascritto nelle sottoclassi per fornire funzionalità specifiche.
+
+VideogiocoAzione: Una sottoclasse di Videogioco che rappresenta i giochi d'azione. Questa classe include un metodo specifico combatti.
+
+VideogiocoStrategia: Una sottoclasse di Videogioco che rappresenta i giochi di strategia. Questa classe include un metodo specifico pianifica.
+
+Utente: Rappresenta un utente che può richiedere videogiochi. Ogni utente ha un nickname e una password. Gli utenti possono richiedere i videogiochi tramite il metodo richiediVideogioco. 
+Gli utenti possono anche effettuare il login per accedere all'applicazione.
+
+Admin: Una sottoclasse di Utente con privilegi di amministratore. Gli amministratori possono accettare o rifiutare le richieste di inserimento di nuovi giochi nel catalogo. 
+Possono anche aggiungere nuovi giochi al catalogo e rimuovere i giochi esistenti.
+
+Console: La classe principale che gestisce il menu di accesso, il login, il logout e l'interazione utente. Mantiene una lista di utenti, inclusi gli amministratori, e un catalogo di videogiochi.
+
+-- CARATTERISTICHE CHIAVE --
+
+Ecco alcune delle principali caratteristiche del progetto Videogiochi:
+
+Gestione del Catalogo: Gli amministratori possono accettare o rifiutare le richieste di inserimento di nuovi videogiochi nel catalogo. Possono anche aggiungere direttamente nuovi giochi al catalogo.
+
+Gestione Utenti: Gli utenti possono richiedere i videogiochi e effettuare il login per accedere all'applicazione.
+
+Generi Diversi: Il progetto supporta videogiochi di diversi generi, come azione e strategia, con comportamenti specifici per ciascun genere.
+
+Interfaccia Utente Intuitiva: L'applicazione offre un'interfaccia utente intuitiva che consente agli utenti di navigare e interagire con facilità.
+
+-- UTILIZZO --
+
+Gli utenti possono avviare l'applicazione e, se necessario, effettuare il login per accedere. Dopo il login, possono richiedere videogiochi, visualizzare il catalogo dei giochi e interagire con il sistema.
+
+Gli amministratori possono accedere con privilegi speciali per gestire le richieste di inserimento di nuovi giochi, aggiungere giochi al catalogo e rimuovere giochi esistenti.

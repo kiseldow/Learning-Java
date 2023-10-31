@@ -1,0 +1,42 @@
+
+__________.__          __                              __          
+\______   \__| _______/  |_  ________________    _____/  |_  ____  
+ |       _/  |/  ___/\   __\/  _ \_  __ \__  \  /    \   __\/ __ \ 
+ |    |   \  |\___ \  |  | (  <_> )  | \// __ \|   |  \  | \  ___/ 
+ |____|_  /__/____  > |__|  \____/|__|  (____  /___|  /__|  \___  >
+        \/        \/                         \/     \/          \/ 
+
+
+-- INTRODUZIONE --
+Il progetto di Gestione Prenotazioni Ristorante è un'applicazione Java che ho sviluppato per gestire le prenotazioni dei clienti in un ristorante. 
+L'obiettivo di questo progetto è automatizzare il processo di accettazione delle prenotazioni, consentendo ai clienti di prenotare un tavolo per un determinato numero di persone, 
+visualizzare i tavoli disponibili e, se necessario, annullare una prenotazione. 
+Questo sistema è stato progettato per essere flessibile e adattabile alle esigenze specifiche del ristorante.
+
+-- ARCHITETTURA --
+Il progetto è composto da diverse classi principali:
+
+Prenotazione: Questa classe rappresenta una prenotazione e contiene dettagli quali l'ID della prenotazione, la disponibilità dei giorni e degli orari, il numero di persone e il tavolo associato.
+
+Tavolo: Questa classe rappresenta un tavolo del ristorante e include informazioni come l'ID del tavolo, il numero di posti e lo stato del tavolo (occupato o libero).
+
+PrenotazioneServiceImpl: Questa classe implementa l'interfaccia PrenotazioneService ed è responsabile della gestione delle prenotazioni e dei tavoli. 
+Fornisce metodi per prenotare tavoli, annullare prenotazioni e verificare la disponibilità dei tavoli.
+
+Interfaccia: Questa classe rappresenta un'interfaccia utente a riga di comando che consente agli utenti di interagire con il sistema. 
+Gli utenti possono eseguire azioni come prenotare tavoli, annullare prenotazioni esistenti e visualizzare tavoli disponibili attraverso un menu interattivo.
+
+-- CARATTERISTICHE CHIAVE --
+Ecco alcune delle caratteristiche chiave del progetto:
+
+Prenotazione e Annullamento: I clienti possono prenotare tavoli specifici per un numero specifico di persone e annullare le prenotazioni in caso di necessità.
+
+Verifica della Disponibilità dei Tavoli: Il sistema è in grado di verificare la disponibilità dei tavoli in base al numero di persone e di restituire una lista di tavoli disponibili.
+
+Archiviazione dei Dati: I dati sulle prenotazioni e sui tavoli sono gestiti e archiviati in memoria all'interno delle rispettive classi.
+
+Interfaccia Utente Intuitiva: L'interfaccia utente a riga di comando fornisce un'esperienza intuitiva per i clienti e gli operatori del ristorante.
+
+-- UTILIZZO --
+Gli utenti possono avviare l'applicazione e interagire con il sistema attraverso l'interfaccia utente a riga di comando. Le opzioni principali includono la prenotazione di tavoli, 
+l'annullamento di prenotazioni e la verifica dei tavoli disponibili. L'applicazione è stata progettata per essere semplice da usare e adattabile alle esigenze specifiche del ristorante.
