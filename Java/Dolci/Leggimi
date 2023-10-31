@@ -50,3 +50,7 @@ I clienti possono aggiungere prodotti al proprio carrello, effettuare ordini e g
 I manager possono assumere e licenziare dipendenti, modificare la quantità di prodotti e visualizzare informazioni dettagliate sul personale.
 I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingredienti.
 Il fornitore può rifornire le materie prime su richiesta del proprietario.
+
+
+-- TODO -- 
+Interfaccia di gestione dell'applicazione
