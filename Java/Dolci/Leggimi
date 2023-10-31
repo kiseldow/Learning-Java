@@ -7,11 +7,11 @@
         \/             \/     \/            \/      \/       |__|    
 
 
--- INTRODUZIONE --
+# -- INTRODUZIONE --
 Il Progetto Dolci è un'applicazione Java sviluppata per la gestione di un'immaginaria pasticceria. Questa applicazione consente agli utenti di visualizzare, aggiungere, rimuovere e acquistare prodotti dolci, 
 nonché di gestire il personale, fornitori e materie prime. L'obiettivo principale del progetto è semplificare il processo di gestione dei prodotti dolci e delle risorse umane all'interno della pasticceria.
 
--- ARCHITETTURA --
+# -- ARCHITETTURA --
 Il progetto è composto principalmente dalle seguenti classi e componenti:
 
 Prodotto: Rappresenta un prodotto dolce disponibile nella pasticceria. Ogni prodotto ha un nome, un prezzo, ingredienti, una descrizione, una quantità disponibile e una quantità nel carrello. 
@@ -30,7 +30,7 @@ I pasticceri possono creare prodotti dolci in base alla disponibilità degli ing
 
 Fornitore: Rappresenta un fornitore che rifornisce le materie prime necessarie per la preparazione dei dolci. Agisce solo su richiesta del proprietario della pasticceria.
 
--- FUNZIONALITA` PRINCIPALI --
+# -- FUNZIONALITA` PRINCIPALI --
 Di seguito sono elencate alcune delle funzionalità principali del progetto Dolci:
 
 Gestione dei Prodotti: Gli utenti possono visualizzare, aggiungere e rimuovere prodotti dolci dal catalogo della pasticceria. I prodotti possono essere di diversi tipi, come torte, cupcake e biscotti.
@@ -43,7 +43,7 @@ Gestione del Personale: Il manager può assumere e licenziare dipendenti, e tutt
 
 Rifornimento delle Materie Prime: Il fornitore può rifornire le materie prime necessarie per la preparazione dei dolci su richiesta del proprietario della pasticceria.
 
--- UTILIZZO --
+# -- UTILIZZO --
 Gli utenti possono avviare l'applicazione Dolci e interagire con il sistema attraverso una serie di comandi e azioni disponibili nelle diverse classi e componenti. Ad esempio:
 
 I clienti possono aggiungere prodotti al proprio carrello, effettuare ordini e gestire il proprio denaro.
@@ -52,5 +52,5 @@ I pasticceri possono creare nuovi dolci in base alla disponibilità degli ingred
 Il fornitore può rifornire le materie prime su richiesta del proprietario.
 
 
--- TODO -- 
+# -- TODO -- 
 Interfaccia di gestione dell'applicazione
