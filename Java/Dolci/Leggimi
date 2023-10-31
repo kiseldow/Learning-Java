@@ -7,11 +7,11 @@
         \/             \/     \/            \/      \/       |__|    
 
 
-# INTRODUZIONE
+-- INTRODUZIONE --
 Il Progetto Dolci è un'applicazione Java sviluppata per la gestione di un'immaginaria pasticceria. Questa applicazione consente agli utenti di visualizzare, aggiungere, rimuovere e acquistare prodotti dolci, 
 nonché di gestire il personale, fornitori e materie prime. L'obiettivo principale del progetto è semplificare il processo di gestione dei prodotti dolci e delle risorse umane all'interno della pasticceria.
 
-# ARCHITETTURA
+-- ARCHITETTURA --
 Il progetto è composto principalmente dalle seguenti classi e componenti:
 
 Prodotto: Rappresenta un prodotto dolce disponibile nella pasticceria. Ogni prodotto ha un nome, un prezzo, ingredienti, una descrizione, una quantità disponibile e una quantità nel carrello. 
