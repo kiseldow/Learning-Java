@@ -5,3 +5,51 @@
  /        \\     /\  ___/\  ___/|  | /        \|   Y  (  <_> )  |_> >
 /_______  / \/\_/  \___  >\___  >__|/_______  /|___|  /\____/|   __/ 
         \/             \/     \/            \/      \/       |__|    
+
+INTRODUCTION
+
+The Dolci Project is a Java application developed for managing an imaginary pastry shop. This application allows users to view, add, remove, and purchase sweet products, as well as manage personnel, suppliers, and raw materials. The main goal of the project is to simplify the process of managing sweet products and human resources within the pastry shop.
+
+ARCHITECTURE
+
+The project primarily consists of the following classes and components:
+
+Product: Represents a sweet product available in the pastry shop. Each product has a name, a price, ingredients, a description, available quantity, and a quantity in the cart. This class serves as the base for product types such as Cake, Cupcake, and Cookie.
+
+Cake, Cupcake, Cookie: Classes that extend the Product class to represent specific types of sweets. They contain additional attributes such as diameter (for cookies) or flavor (for cupcakes).
+
+Ingredient: Represents a raw material used for preparing sweets. Ingredients have a name and available quantity.
+
+Administration: Manages the sweet products available in the catalog and the pastry shop's staff. It provides methods for adding, removing products, and hiring employees.
+
+Customer: Represents a customer who can add products to the cart, place orders, and manage their own money.
+
+Employee, Manager, Pastry Chef: Classes for staff management. Employees have a first name, last name, role, date of birth, and hiring date. Managers can hire and fire employees. Pastry chefs can create sweet products based on ingredient availability.
+
+Supplier: Represents a supplier who replenishes the raw materials necessary for sweet product preparation upon the owner's request.
+
+KEY FEATURES
+
+Below are some of the key features of the Dolci project:
+
+Product Management: Users can view, add, and remove sweet products from the pastry shop's catalog. Products can come in various types, such as cakes, cupcakes, and cookies.
+
+Cart Management: Customers can add products to their virtual cart and later place an order.
+
+Reservation Management: Pastry chefs can create new sweets based on ingredient availability and following specific rules (e.g., creating cookies after a certain number of cakes).
+
+Staff Management: The manager can hire and fire employees, and all employees can perform their specific activities.
+
+Raw Material Replenishment: The supplier can replenish raw materials upon the pastry shop owner's request.
+
+USAGE
+
+Users can launch the Dolci application and interact with the system through a series of commands and actions available in the various classes and components. For example:
+
+Customers can add products to their cart, place orders, and manage their money.
+Managers can hire and fire employees, modify the quantity of products, and view detailed information about the staff.
+Pastry chefs can create new sweets based on ingredient availability.
+The supplier can replenish raw materials upon the owner's request.
+TODO
+
+Application management interface.
